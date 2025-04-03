@@ -6,7 +6,7 @@ export default function IncidentList() {
 
   const loadData = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/incidents');
+      const res = await axios.get('http://217.71.129.139:5496/api/incidents');
       setIncidents(res.data);
     } catch (err) {
       console.error('Ошибка загрузки инцидентов:', err);
