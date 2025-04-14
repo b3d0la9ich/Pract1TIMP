@@ -15,7 +15,7 @@ export default function IncidentList() {
 
   const resolveIncident = async (id) => {
     try {
-      await axios.post(`http://217.71.129.139:5376/api/resolve/${id}`);
+      await axios.post(`http://217.71.129.139:5496/api/resolve/${id}`);
       loadData(); 
     } catch (err) {
       console.error('Ошибка при отметке как решённого:', err);
